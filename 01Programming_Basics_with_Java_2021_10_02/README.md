@@ -1,12 +1,12 @@
 # Programming Basics with Java
 
-Курсът "Programming Basics with Java" дава начални умения по програмиране. Това включва писане на програмен код на начално ниво (basic coding skills), работа със среда за разработка (IDE), използване на променливи и данни, оператори и изрази, работа с конзолата (четене на входни данни и печатане на резултати), използване на условни конструкции (if, if-else) и цикли (for, while, do-while).
+The **_"Programming Basics with Java"_** course provides basic programming skills. This includes writing basic coding skills, working with a development environment (IDE), using variables and data, operators and expressions, working with the console (reading input and printing results), using conditional constructions (if, if-else) and loops (for, while, do-while).
 
-**Придобити умения след завършване на курса:**
+**Skills acquired after completing the course:**
 
-- Работа с конзолата (вход и изход на данни)
-- Извършване на прости пресмятания
-- Работа с логически проверки (if-else)
-- Работа с по-сложни логически проверки
-- Работа с цикли (for)
-- Работа с по-сложни цикли (вложени for цикли и while)
+- Console operations (data input and output)
+- Performing simple calculations
+- Working with conditional statements (if-else)
+- Working with more complex conditional statements
+- Working with loops (for loop)
+- Working with more complex loops (nested for loops and while)
