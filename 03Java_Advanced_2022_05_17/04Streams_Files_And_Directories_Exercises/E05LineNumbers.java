@@ -22,8 +22,7 @@ public class E05LineNumbers {
                 line = br.readLine();
             }
 
-        } catch (
-                IOException e) {
+        } catch (IOException e) {               
             throw new RuntimeException(e);
         }
 
