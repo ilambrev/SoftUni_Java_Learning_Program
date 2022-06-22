@@ -1,6 +1,6 @@
 # Java Advanced Retake Exam - 13 April 2022
 
-Solved problems
+<b>Solved problems</b>
 
 01.Blacksmith
 
