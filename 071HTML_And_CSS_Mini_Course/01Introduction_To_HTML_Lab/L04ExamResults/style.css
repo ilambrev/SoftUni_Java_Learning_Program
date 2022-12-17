@@ -1,0 +1,30 @@
+table, td, tr, th {
+    font-family: "Helvetica", sans-serif;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+}
+
+table {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+.result {
+    width: 400px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
