@@ -12,6 +12,8 @@ There are 3 main models that the SoftWeather Forecast database application shoul
 - City
 - Forecast
 
+![Screenshot](SoftWeatherForecast_EER_Diagram.png)
+
 **_2.Data Import_**
 
 The application should be able to import hard-formatted data in JSON and XML format.
