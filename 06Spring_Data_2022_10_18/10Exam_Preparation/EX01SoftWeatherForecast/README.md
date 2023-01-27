@@ -1,6 +1,6 @@
 # SoftWeather Forecast Application
 
-**_SoftWeather Forecast_** shoud be represents web-based application that provides accurate weekend Weather Forecasts for hundreds of places around the World.
+**_SoftWeather Forecast_** shoud represents web-based application that provides accurate weekend Weather Forecasts for hundreds of places around the World.
 
 **Goals to achieve:**
 
