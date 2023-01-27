@@ -12,7 +12,7 @@ There are 3 main models that the SoftWeather Forecast database application shoul
 - City
 - Forecast
 
-![Screenshot](SoftWeatherForecast_EER_Diagram.png)
+![Screenshot](SoftWeatherForecast_EER_Diagram.svg)
 
 **_2.Data Import_**
 
