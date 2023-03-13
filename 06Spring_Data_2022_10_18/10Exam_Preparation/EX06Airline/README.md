@@ -27,6 +27,6 @@ The application shoud be able to export data from the database according to a pr
 - last name
 - email
 - phone
-- count of tickets.
+- count of tickets
 
 Exported data must be ordered first by tickets count in descending order then by email alphabetically.
