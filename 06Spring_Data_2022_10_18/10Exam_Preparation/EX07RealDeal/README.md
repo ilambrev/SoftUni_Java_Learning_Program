@@ -13,7 +13,7 @@ There are 4 main models that the Real Deal database application should contain i
 - Picture
 - Offer
 
-![Screenshot](RealDeal_EER_Diagram_EER_Diagram.png)
+![Screenshot](RealDeal_EER_Diagram.png)
 
 **_2.Data Import_**
 
