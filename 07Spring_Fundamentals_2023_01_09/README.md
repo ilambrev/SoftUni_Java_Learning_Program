@@ -9,4 +9,4 @@ The **_"Spring Fundamentals"_** course examines the basic principles of web deve
 - Working with the HTTP protocol
 - Building web applications with the Spring MVC framework
 - Working with basic principles of Spring framework
-- Skills and experience in working with bootstrap
+- Skills and experience in working with Bootstrap
