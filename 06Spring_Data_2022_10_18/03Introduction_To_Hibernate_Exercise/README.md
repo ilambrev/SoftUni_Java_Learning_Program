@@ -1,7 +1,6 @@
 # Introduction to Hibernate
-## Exercises
 
-<p>&nbsp;</p>
+**Exercises**
 
 **Goals to achieve:** Working with database using an ORM framework Hibernate.
 
