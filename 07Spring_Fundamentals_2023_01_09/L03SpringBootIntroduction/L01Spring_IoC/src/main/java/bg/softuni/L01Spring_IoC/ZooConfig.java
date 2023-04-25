@@ -6,7 +6,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ZooConfig {
 
-//    @Primary // Used when there are multiple Beans of same type
+    //@Primary is used when there are multiple Beans of same type
+    //@Primary
     @Bean("normalDog") // Assign name to Bean
     public Animal dog() {
         return new Dog();
