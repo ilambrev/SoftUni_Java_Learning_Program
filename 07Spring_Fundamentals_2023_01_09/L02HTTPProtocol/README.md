@@ -1,6 +1,6 @@
 # HTTP Protocol
 
-**The lecture covers the following topics:**
+**The lecture covers following topics:**
 
 - Http Basics
 - URL
