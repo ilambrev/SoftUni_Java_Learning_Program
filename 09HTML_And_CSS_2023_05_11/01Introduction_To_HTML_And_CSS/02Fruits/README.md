@@ -1,1 +1,3 @@
+# Fruits
 
+![Screenshot](fruits.png)
