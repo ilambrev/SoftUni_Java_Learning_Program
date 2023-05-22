@@ -1,9 +1,10 @@
+/* To take 100 points in Judge (SoftUni testing system), fonts in CSS file, with names containing several words, must be without quotes. */
+
 body {
     text-align: center;
 }
 
 article h1 {
-    /* To take 100 points in Judge (SoftUni testing system), fonts in CSS file, with names containing several words, must be without quotes. */
     font-family: "Sentinel A", "Sentinel B", Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
     line-height: 1.15;
