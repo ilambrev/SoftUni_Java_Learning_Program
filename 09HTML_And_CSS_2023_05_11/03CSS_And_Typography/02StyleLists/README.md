@@ -1,3 +1,3 @@
 # Style Lists
 
-![Screenshot](restaurant-menu.png)
+![Screenshot](style-lists.png)
