@@ -1,3 +1,5 @@
+/* To take 100 points in Judge (SoftUni testing system), fonts in CSS file, with names containing several words, must be without quotes. */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
@@ -8,7 +10,7 @@ html {
 }
 
 h1, h2 {
-    font-family: Great Vibes, cursive;
+    font-family: "Great Vibes", cursive;
     line-height: 1.2;
     font-weight: bold;
 }
