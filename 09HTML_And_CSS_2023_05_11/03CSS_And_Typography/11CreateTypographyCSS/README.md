@@ -1,3 +1,3 @@
-# Styling Tables
+# Create Typography CSS
 
-![Screenshot](styling-tables.png)
+![Screenshot](create-typography-css.png)
