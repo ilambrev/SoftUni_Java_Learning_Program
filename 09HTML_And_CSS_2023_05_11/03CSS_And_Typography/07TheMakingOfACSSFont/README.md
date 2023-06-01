@@ -1,3 +1,3 @@
-# Styling Tables
+# The Making Of A CSS Font
 
-![Screenshot](styling-tables.png)
+![Screenshot](the-making-of-a-css-font.png)
