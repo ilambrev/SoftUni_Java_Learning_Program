@@ -1,3 +1,3 @@
-# Styling Tables
+# Icon Font Buttons
 
-![Screenshot](styling-tables.png)
+![Screenshot](icon-font-buttons.png)
