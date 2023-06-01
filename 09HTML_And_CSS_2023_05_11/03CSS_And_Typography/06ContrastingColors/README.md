@@ -1,3 +1,3 @@
-# Styling Tables
+# Contrasting Colors
 
-![Screenshot](styling-tables.png)
+![Screenshot](contrasting-colors.png)
