@@ -1,3 +1,3 @@
-# Styling Tables
+# Fonts Speciment - Great Vibes + Raleway
 
-![Screenshot](styling-tables.png)
+![Screenshot](fonts-speciment-great-vibes-plus-raleway.png)
