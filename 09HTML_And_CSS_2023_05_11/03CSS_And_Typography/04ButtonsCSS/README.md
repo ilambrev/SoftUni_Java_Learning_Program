@@ -1,3 +1,3 @@
-# Styling Tables
+# Buttons CSS
 
-![Screenshot](styling-tables.png)
+![Screenshot](buttons-css.png)
