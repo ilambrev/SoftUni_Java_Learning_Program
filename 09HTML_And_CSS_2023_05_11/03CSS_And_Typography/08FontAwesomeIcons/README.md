@@ -1,3 +1,3 @@
-# Styling Tables
+# Font Awesome Icons
 
-![Screenshot](styling-tables.png)
+![Screenshot](font-awesome-icons.png)
