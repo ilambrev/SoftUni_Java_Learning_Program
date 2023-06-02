@@ -1,3 +1,3 @@
-# Styling Tables
+# Box Model Container
 
-![Screenshot](styling-tables.png)
+![Screenshot](box-model-container.png)
