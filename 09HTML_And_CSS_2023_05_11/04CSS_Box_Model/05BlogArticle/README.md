@@ -1,3 +1,3 @@
-# Styling Tables
+# Blog Article
 
-![Screenshot](styling-tables.png)
+![Screenshot](blog-article.png)
