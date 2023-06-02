@@ -1,3 +1,3 @@
-# Styling Tables
+# Blog Layout Inline Block
 
-![Screenshot](styling-tables.png)
+![Screenshot](blog-layout-inline-block.png)
