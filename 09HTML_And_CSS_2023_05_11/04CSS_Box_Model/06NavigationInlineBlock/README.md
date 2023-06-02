@@ -1,3 +1,3 @@
-# Styling Tables
+# Navigation Inline Block
 
-![Screenshot](styling-tables.png)
+![Screenshot](navigation-inline-block.png)
