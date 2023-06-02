@@ -1,3 +1,3 @@
-# Styling Tables
+# Brazil Coffee
 
-![Screenshot](styling-tables.png)
+![Screenshot](brazil-coffee.png)
