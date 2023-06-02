@@ -1,3 +1,3 @@
-# Styling Tables
+# Scrolling Article
 
-![Screenshot](styling-tables.png)
+![Screenshot](scrolling-article.png)
