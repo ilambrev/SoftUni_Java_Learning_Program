@@ -1,3 +1,3 @@
-# Styling Tables
+# Photo Gallery Inline Block
 
-![Screenshot](styling-tables.png)
+![Screenshot](photo-gallery-inline-block.png)
