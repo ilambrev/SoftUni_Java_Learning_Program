@@ -1,3 +1,3 @@
-# Styling Tables
+# Make Your Own Website
 
-![Screenshot](styling-tables.png)
+![Screenshot](make-your-olwn-website.png)
