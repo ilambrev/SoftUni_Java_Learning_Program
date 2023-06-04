@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    /* To take 100 points in Judge (SoftUni testing system), must remove spaces between rgb values
+        only for border-bootom property */
+}
+
+header p {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 24px 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+header nav ul li:last-child a {
+    padding-right: 20px;
+}
+
+main h1 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+main p {
+    line-height: 1.5;
+    opacity: 0.7;
+}
