@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .gallery ul, .gallery ul li {
+    display: flex;
+}
+
+.gallery {
+    background-color: #eee;
+    width: 1048px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+.gallery ul {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0;
+    margin: 100px 110px;
+}
+
+.gallery ul li {
+    background-color: #fff;
+    align-items: center;
+    width: 230px;
+    height: 360px;
+    border: 5px solid #eee;
+    padding: 5px 5px;
+    box-shadow: 0 0 0 10px #000, 0px 0px 5px 20px rgba(0,0,0,0.06);
+}
+
+.gallery ul li img {
+    width: 100%;
+    height: auto;
+}
