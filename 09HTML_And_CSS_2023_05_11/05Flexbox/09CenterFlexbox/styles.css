@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    height: 120px;
+    padding: 10px 10px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card p {
+    font-family: Tahoma, sans-serif;
+    opacity: 0.6;
+}
