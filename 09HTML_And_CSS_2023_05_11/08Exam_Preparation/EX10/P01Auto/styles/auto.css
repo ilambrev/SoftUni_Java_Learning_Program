@@ -37,7 +37,6 @@ h2 {
 .text-content>article {
     display: grid;
     grid-template-columns: 60px auto;
-    grid-template-rows: 2;
     grid-template-areas:
         "image heading"
         "image text";
