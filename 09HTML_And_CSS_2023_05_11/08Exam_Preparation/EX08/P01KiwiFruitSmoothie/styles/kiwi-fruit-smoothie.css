@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    font-family: 'PT Serif', serif;
+}
+
+body {
+    padding-top: 34px;
+}
+
+.site {
+    display: grid;
+    width: 900px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-image: url('../image/image1.png');
+    background-repeat: no-repeat;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    padding: 28px 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container h1 {
+    border-bottom: 1px dotted #008000;
+    text-align: center;
+}
+
+.text-container .subtitle {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+
+.text-container .subtitle p {
+    font-style: italic;
+}
+
+.text-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.text-container .colored-text {
+    color: #008000;
+    font-weight: 600;
+}
+
+.text-container>p {
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th,
+table td {
+    border: 1px solid #008000;
+}
+
+.image img {
+    width: 100%;
+}
