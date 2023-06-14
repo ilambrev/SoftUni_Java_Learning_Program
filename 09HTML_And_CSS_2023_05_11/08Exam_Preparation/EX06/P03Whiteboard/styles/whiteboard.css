@@ -1,0 +1,247 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    height: 530px;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 1200px;
+    height: 530px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+    color: #ffffff;
+    padding: 20px 180px 80px 180px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero-content nav {
+    width: 100%;
+}
+
+.hero-content nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.hero-content nav ul li {
+    display: inline-block;
+    font-size: 19px;
+    text-shadow: -1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content nav ul li i {
+    margin-right: 6px;
+    font-size: 24px;
+}
+
+.hero-content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 53px;
+    text-shadow: -1px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    display: block;
+    width: 480px;
+    font-size: 22px;
+    text-shadow: -1px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.hero-content .button {
+    background-color: #00d08e;
+    padding: 8px 22px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-content .button:hover {
+    background-color: transparent;
+    padding: 5px 19px;
+    border: 3px solid #ffffff;
+}
+
+.hero-content .see-action {
+    font-size: 19px;
+    text-shadow: -1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content .see-action i {
+    margin-left: 10px;
+}
+
+.description {
+    display: flex;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.description>img {
+    height: 100%;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 58px;
+    opacity: 0.8;
+}
+
+.description-content h2 {
+    font-size: 32px;
+}
+
+.description-content p {
+    font-size: 22px;
+}
+
+.description-content ul {
+    padding: 0;
+    font-size: 18px;
+    line-height: 2.3;
+}
+
+.description-content i {
+    color: #00d08e;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.advantages {
+    display: flex;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.advantages-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.advantages-content h2 {
+    display: block;
+    font-size: 32px;
+}
+
+.advantages-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.advantages-articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages-articles article p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #00d08e;
+    margin-top: 6px;
+}
+
+.advantages-articles article img {
+    width: 70px;
+}
+
+.advantages>img {
+    height: 100%;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 510px;
+    background-color: #b2f1dd;
+}
+
+.questions h2 {
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+.questions-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 288px);
+    grid-column-gap: 80px;
+    grid-row-gap: 50px;
+    text-align: center;
+    line-height: 1.2;
+    opacity: 0.8;
+}
+
+.questions-articles article h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.questions footer p {
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.questions footer a {
+    color: #000000;
+    font-weight: 800;
+}
