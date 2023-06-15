@@ -1,0 +1,210 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.site {
+    width: 99vw;
+    margin: 0 auto;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 750px;
+    background-image: url('../images/landing-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 60%;
+    padding: 50px 370px 150px 370px;
+}
+
+.header-section header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-section header p {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.header-section header ul {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-section header ul a {
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.header-section header ul .selected,
+.header-section .text-content a {
+    background-color: #000000;
+    padding: 7px 36px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.header-section .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.header-section .text-content .title h1 {
+    font-size: 59px;
+}
+
+.header-section .text-content .title p {
+    font-size: 32px;
+}
+
+.header-section .text-content .info {
+    font-size: 20px;
+}
+
+.places-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 80px 0 140px 0;
+}
+
+.places-section h2 {
+    font-size: 40px;
+}
+
+.places-section>p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #666666;
+}
+
+.places-section .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 67%;
+    gap: 60px;
+}
+
+.places-section .cards-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 16px
+}
+
+.places-section .cards-container .card .img-container {
+    display: flex;
+    width: 380px;
+    height: 310px;
+    overflow: hidden;
+}
+
+.places-section .cards-container .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.places-section .cards-container .card h3 {
+    font-size: 25px;
+}
+
+.places-section .cards-container .card p {
+    padding-left: 25px;
+}
+
+.places-section .cards-container .card a {
+    border: 1px solid #000000;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 67%;
+}
+
+footer .footer-content>p {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+footer .footer-content .info {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    font-size: 20px;
+}
+
+footer .footer-content .info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .footer-content .social-media-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+footer .footer-content .social-media-container ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content .social-media-container a {
+    font-size: 28px;
+}
