@@ -1,3 +1,5 @@
 # P02 Little Baby Gym
 
-![Screenshot](fitnes-site.png)
+![Screenshot](little-baby-gym.png)
+
+![Screenshot](little-baby-gym-600px.png)
