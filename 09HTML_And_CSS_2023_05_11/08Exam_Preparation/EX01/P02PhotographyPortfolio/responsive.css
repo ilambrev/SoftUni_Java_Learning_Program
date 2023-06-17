@@ -1,0 +1,78 @@
+@media (width <=600px) {
+
+    .section-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .navigation-nav {
+        display: none;
+    }
+
+    .home-portofolio {
+        padding-top: 103px;
+        margin-bottom: 33px;
+    }
+
+    .home-text-container .home-text {
+        display: none;
+    }
+
+    .home-text-container .home-text01 {
+        margin-top: 0;
+    }
+
+    .home-tab-selector-header {
+        margin-top: 20px;
+    }
+
+    .home-tab-selector-header .home-text03 {
+        margin-right: 20px;
+    }
+
+    .home-tab-selector-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .home-max-width1.max-content-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .home-max-width2.max-content-container {
+        padding-right: 48px;
+    }
+
+    .home-text10 {
+        margin-right: 30px;
+    }
+
+    .home-top-part {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .home-subscribe-container {
+        width: 100%;
+    }
+
+    .button-primary.button {
+        padding: 1.3rem 1.5rem;
+    }
+
+}
