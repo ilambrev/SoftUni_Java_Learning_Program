@@ -1,0 +1,395 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 1900px;
+}
+
+.site header {
+    width: 100%;
+    padding: 40px 210px;
+}
+
+.site header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .links,
+header .login {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+}
+
+header nav li {
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+header nav .button {
+    background-color: #ade2df;
+    padding: 18px 30px;
+    border-radius: 10px;
+    align-self: auto;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ade2df;
+    gap: 50px;
+    padding: 125px 0;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.banner p {
+    font-size: 22px;
+}
+
+.banner .buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.ios,
+.android {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.ios i,
+.android i {
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 125px 0;
+}
+
+.stats .articles-container {
+    display: flex;
+    gap: 20px;
+}
+
+.stats .articles-container article {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #dbdbdb;
+    padding: 0 20px 120px 20px;
+    gap: 40px;
+}
+
+.stats .articles-container article span {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.stats .articles-container article p {
+    font-size: 22px;
+    width: 430px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ade2df;
+}
+
+.info .info-container {
+    display: flex;
+    gap: 120px;
+}
+
+.info .info-container .image-container {
+    height: 100%;
+    border: 2px dashed #98b8b6;
+    padding: 0 45px;
+}
+
+.info .info-container .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 650px;
+}
+
+.info .info-container .text-content div {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.info .info-container .text-content h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.info .info-container .text-content span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.info .info-container .text-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.info .info-container .text-content a {
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+    padding-bottom: 6px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f3f5fa;
+    padding: 60px 0 70px 0;
+    gap: 110px;
+}
+
+.prices .title {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+}
+
+.prices .title a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ade2df;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.prices .title h3 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.prices .prices-articles-container {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.prices .prices-articles-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.prices .prices-articles-container i {
+    margin-right: 6px;
+}
+
+.prices .prices-articles-container .plan {
+    width: 20%;
+    background-color: #ffffff;
+}
+
+.prices .prices-articles-container .plan-contact {
+    width: 40%;
+    background-color: #ade2df;
+}
+
+.prices .prices-articles-container article {
+    padding: 40px 0;
+}
+
+.prices .prices-articles-container article h4 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.prices .prices-articles-container .plan .plan-container1,
+.prices .prices-articles-container .plan .plan-container2,
+.prices .prices-articles-container .plan .plan-container3 {
+    padding: 0 40px;
+}
+
+.prices .prices-articles-container .plan .plan-container1,
+.prices .prices-articles-container .plan .plan-container2 {
+    border-right: 1px solid #dbdbdb;
+}
+
+.prices .prices-articles-container .plan p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.prices .prices-articles-container .plan .value-container {
+    padding: 30px 0;
+}
+
+.prices .prices-articles-container .plan .value {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.prices .prices-articles-container .plan .period {
+    font-size: 20px;
+}
+
+.prices .prices-articles-container .plan ul {
+    font-size: 18px;
+    line-height: 2.2;
+    opacity: 0.8;
+    border-top: 1px solid #dbdbdb;
+    padding: 34px 0 60px 0;
+}
+
+.prices .prices-articles-container .plan a {
+    display: block;
+    text-decoration: none;
+    background-color: #ade2df;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+.prices .prices-articles-container .plan-contact .plan-contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.prices .prices-articles-container .plan-contact p {
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.prices .prices-articles-container .plan-contact ul {
+    font-size: 20px;
+    line-height: 2;
+    opacity: 0.8;
+    padding-top: 30px;
+}
+
+.prices .prices-articles-container .plan-contact a {
+    display: block;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+.get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ade2df;
+    gap: 60px;
+    padding: 125px 0;
+}
+
+.get-started .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.get-started h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1.1;
+    width: 40%;
+    text-align: center;
+}
+
+.get-started p {
+    font-size: 24px;
+    width: 38%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.get-started .buttons-container {
+    display: flex;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+footer p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
