@@ -3,9 +3,10 @@ function deleteByEmail() {
     let tdWithEmails = Array.from(document.querySelectorAll('#customers td:nth-child(even)'));
 
     let result = 'Deleted';
+    let emailsFound = tdWithEmails.filter(td => td.textContent === inputEmail);
 
-    if (tdWithEmails.filter(td => td.textContent === inputEmail).length > 0) {
-        let row = tdWithEmails.filter(td => td.textContent === inputEmail)[0].parentNode;
+    if (emailsFound.length > 0) {
+        let row = emailsFound[0].parentNode;
         row.parentNode.removeChild(row);
     } else {
         result = 'Not found.';
