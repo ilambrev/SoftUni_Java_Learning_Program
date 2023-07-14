@@ -8,7 +8,7 @@ function create(words) {
       newElement.appendChild(newParagraph);
 
       newElement.addEventListener('click', (e) => {
-         e.target.querySelector('p').style.display = 'block';
+         e.currentTarget.querySelector('p').style.display = 'block';
       })
 
       document.querySelector('#content').appendChild(newElement);
