@@ -1,0 +1,332 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.site {
+    max-width: 1680px;
+    background-color: #ffffff;
+}
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 450px;
+    height: 120px;
+}
+
+.site-header h1 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #494a4b;
+}
+
+.blue-title {
+    color: #21a2b9;
+}
+
+.site-header ul {
+    display: flex;
+    gap: 42px;
+    list-style: none;
+}
+
+.site-header li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #494a4b;
+}
+
+.site-header li:nth-of-type(1)::after {
+    display: block;
+    content: '';
+    background-color: #34b1c4;
+    width: 100%;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.site-banner {
+    display: flex;
+    align-items: center;
+    height: 660px;
+    background-image: url('../images/slide2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.site-banner .banner-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 610px;
+    height: 250px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    margin-top: 70px;
+    margin-left: 200px;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.site-banner .banner-text-content p {
+    font-size: 52px;
+    color: #ffffff;
+}
+
+.site-banner .banner-text-content a {
+    width: 300px;
+    background-color: #008cba;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.company-info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    height: 370px;
+}
+
+.company-info-section h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #454545;
+}
+
+.company-info-section h2::after {
+    display: block;
+    content: '';
+    background-color: #34b1c4;
+    width: 120px;
+    text-align: center;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.company-info-section p {
+    font-size: 20px;
+    margin: 0 190px;
+    color: #545c7b;
+    text-align: center;
+}
+
+.company-info-section a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #454545;
+    color: #ffffff;
+    padding: 17px 40px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.company-services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 770px;
+    background-color: #eef0f1;
+}
+
+.company-services-section h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #454545;
+}
+
+.company-services-section h2::after {
+    display: block;
+    content: '';
+    background-color: #454545;
+    width: 120px;
+    text-align: center;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.company-services-section .services-container {
+    display: flex;
+    gap: 36px;
+}
+
+.company-services-section article {
+    width: 400px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.company-services-section .image-container {
+    width: 400px;
+    height: 270px;
+}
+
+.company-services-section .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.company-services-section article h3 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #59524a;
+    margin-top: 30px;
+}
+
+.company-services-section article p {
+    font-size: 20px;
+    color: #5d6974;
+    margin: 16px 20px 30px 20px;
+}
+
+.company-services-section article a {
+    font-size: 22px;
+    text-decoration: none;
+    background-color: #454545;
+    color: #ffffff;
+    padding: 11px 22px;
+    border-radius: 6px;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #393f43;
+    height: 290px;
+}
+
+.subscribe-section h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.subscribe-section h3::after {
+    display: block;
+    content: '';
+    background-color: #ffffff;
+    width: 130px;
+    text-align: center;
+    height: 3px;
+    margin-top: 5px;
+}
+
+.subscribe-section span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.subscribe-section p {
+    margin-top: 16px;
+}
+
+.subscribe-section .form input {
+    width: 600px;
+    height: 54px;
+    background-color: #545a5e;
+    font-size: 22px;
+    font-style: italic;
+    color: #757575;
+    border: 0px #545a5e;
+    border-radius: 6px;
+    margin-right: 6px;
+    padding-left: 12px;
+}
+
+.subscribe-section .form a {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #6bbfff;
+    color: #ffffff;
+    padding: 14px 50px;
+    border-radius: 6px;
+}
+
+.company-contacts-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+    background-color: #2f3539;
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.company-contacts-section .contacts-groups {
+    display: flex;
+    gap: 220px;
+}
+
+.company-contacts-section .contacts-groups ul {
+    list-style: none;
+}
+
+.company-contacts-section .contacts-groups a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.company-contacts-section .contacts-groups .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.company-contacts-section .contacts-groups .contacts .address div:nth-child(1) {
+    font-size: 24px;
+}
+
+.company-contacts-section .contacts-groups .media ul {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.company-contacts-section .contacts-groups .media a {
+    font-size: 26px;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #262b2f;
+    color: #ffffff;
+}
