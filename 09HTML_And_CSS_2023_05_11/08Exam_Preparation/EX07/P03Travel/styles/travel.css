@@ -1,0 +1,290 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.site {
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 200px;
+    background-color: #ffffff;
+    padding-right: 70px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+
+header .first-list li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 190px;
+    height: 120px;
+    color: #4d5a74;
+}
+
+header .first-list li a:hover {
+    background-color: #b58e10;
+    color: #ffffff;
+}
+
+header .first-list a i {
+    font-size: 38px;
+}
+
+header .second-list {
+    margin-right: 20px;
+}
+
+header .second-list a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 33px;
+    color: #4d5a74;
+}
+
+header .second-list li a:hover {
+    background-color: #b58e10;
+    color: #ffffff;
+}
+
+header .logo {
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 220px;
+    background-image: linear-gradient(to top, rgba(154, 105, 12, 1), rgba(208, 171, 59, 1));
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 100;
+}
+
+header .logo img {
+    width: 70%;
+    height: auto;
+}
+
+.banner {
+    position: relative;
+    height: 750px;
+    overflow: hidden;
+}
+
+.banner img {
+    position: absolute;
+    width: 125%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .shuttle {
+    position: absolute;
+    bottom: 120px;
+    left: 124px;
+    background-color: rgba(0,0,0,0.6);
+    width: 724px;
+    height: 378px;
+    color: #ffffff;
+    padding: 60px 40px;
+}
+
+.banner .shuttle h3 {
+    font-size: 34px;
+    letter-spacing: 0.4px;
+    margin-bottom: 32px;
+}
+
+.banner .shuttle p {
+    font-size: 25px;
+    letter-spacing: 0.4px;
+    margin-bottom: 40px;
+}
+
+.banner .shuttle a {
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fda400;
+    padding: 15px 28px;
+}
+
+.banner .shuttle a:hover {
+    background-color: #ffffff;
+}
+
+.budapest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    height: 590px;
+    background-image: linear-gradient(to right, rgba(151, 105, 11, 1), rgba(207, 171, 59, 1));
+    color: #ffffff;
+}
+
+.budapest h2 {
+    font-size: 42px;
+}
+
+.budapest .budapest-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 810px;
+}
+
+.budapest .budapest-text-content p {
+    font-size: 28px;
+}
+
+.budapest .budapest-text-content i {
+    margin-right: 8px;
+}
+
+.budapest a {
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 16px 28px;
+}
+
+.budapest a:hover {
+    background-color: #ffffff;
+    color: #b2882c;
+}
+
+.budapest-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 666px;
+    background-color: #ffffff;
+}
+
+.budapest-card h1 {
+    font-size: 52px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    width: 80%;
+    color: #505677;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.budapest-card>p {
+    font-size: 28px;
+    color: #4c5875;
+    margin-bottom: 30px;
+}
+
+.budapest-card .budapest-cards-container {
+    display: flex;
+    gap: 4px;
+}
+
+.budapest-card .budapest-cards-container .card {
+    width: 262px;
+    text-align: center;
+}
+
+.card-image-container {
+    margin-bottom: 20px;
+}
+
+.card-image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    outline: 3px solid #51546e;
+}
+
+.budapest-cards-container p {
+    font-size: 20px;
+    color: #585f68;
+}
+
+.subscribe {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 114px;
+    background-color: #b58e0f;
+    padding: 0 40px 20px 40px;
+}
+
+.subscribe .subscribe-text-container {
+    color: #ffffff;
+}
+
+.subscribe .subscribe-text-container h4 {
+    font-size: 23px;
+}
+
+.subscribe .subscribe-text-container p {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.subscribe a {
+    text-decoration: none;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 14px 28px;
+}
+
+.subscribe a:hover {
+    background-color: #ffffff;
+    color: #b58e0f;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+footer p {
+    font-size: 21px;
+    opacity: 0.8;
+}
