@@ -1,0 +1,59 @@
+@media (width <=800px) {
+
+    header .menu {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header .nav-options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: unset;
+        padding-inline-start: unset;
+    }
+
+    .trainings {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trainings div {
+        width: 50%;
+    }
+
+    .instructors-pic {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .classes li {
+        width: 44%;
+    }
+
+    .getInTouch {
+        flex-wrap: wrap;
+    }
+
+    .form {
+        flex: 0 0 100%;
+    }
+
+    .map {
+        margin-bottom: 30px;
+    }
+
+    .site-footer .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .site-footer .about {
+        flex: 0 0 100%;
+    }
+
+    .site-footer .sitemap {
+        flex: 0 0 50%;
+    }
+
+}
