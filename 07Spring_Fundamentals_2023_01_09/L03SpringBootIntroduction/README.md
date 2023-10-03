@@ -2,5 +2,5 @@
 
 **The lecture covers following topics:**
 
-- What’s Spring Boot?;
-- Spring Data.
+- What’s Spring Boot
+- Spring Data
