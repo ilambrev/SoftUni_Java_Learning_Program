@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/commons::head">
+  <title>Planner App</title>
+</head>
+
+<body>
+
+<header th:replace="fragments/commons::nav"></header>
+
+<main>
+  <div class="container bg-blur rounded mt-5 ">
+    <h1>Welcome to Planner App</h1>
+    <hr class="my-3 bg-white w-50"/>
+
+    <p class="h4 text-danger">Something went wrong!</p>
+    <p class="h4">Our Engineers are on it</p>
+    <hr class="my-3 bg-white w-75"/>
+
+    <h3>
+      <a class="text-primary" th:href="@{/home}">Go Home</a>
+    </h3>
+  </div>
+</main>
+
+<footer th:replace="fragments/commons::footer"></footer>
+
+</body>
+
+</html>

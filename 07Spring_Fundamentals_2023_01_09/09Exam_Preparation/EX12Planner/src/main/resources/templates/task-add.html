@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/commons::head">
+    <title>Planner App</title>
+</head>
+
+<body>
+
+<header th:replace="fragments/commons::nav"></header>
+
+<main>
+    <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Add task</span></h1>
+    <hr class="hr-3 w-25 bg-white"/>
+
+    <form class="mx-auto w-25 bg-blur rounded" th:method="POST" th:action="@{/tasks/add}" th:object="${taskCreateDTO}">
+
+        <div class="form-group">
+            <div class="label-holder text-white textCol d-flex justify-content-center">
+                <label for="description" class="h4 mb-2">Description</label>
+            </div>
+            <textarea type="text" class="form-control" id="description" name="description"
+                      th:field="*{description}"
+                      th:errorclass="'is-invalid bg-danger'">
+            </textarea>
+            <small th:errors="*{description}" class="text-danger invalid-feedback">Description error message</small>
+        </div>
+
+        <div class="form-group">
+            <div class="label-holder text-white textCol d-flex justify-content-center">
+                <label for="dueDate" class="h4 mb-2">Set due date</label>
+            </div>
+            <input type="date" class="form-control" id="dueDate" name="dueDate"
+                   th:field="*{dueDate}"
+                   th:errorclass="'is-invalid bg-danger'"/>
+            <small th:errors="*{dueDate}" class="text-danger invalid-feedback">Due Date error message</small>
+        </div>
+
+        <div class="form-group">
+            <div class="text-white label-holder d-flex justify-content-center">
+                <label for="priority" class="h4 mb-2">Priority</label>
+            </div>
+            <select class="browser-default custom-select" id="priority" name="priority"
+                    th:field="*{priority}"
+                    th:errorclass="'is-invalid bg-danger'">
+                <option th:value="''">Select priority</option>
+                <option th:value="URGENT">Urgent</option>
+                <option th:value="IMPORTANT">Important</option>
+                <option th:value="LOW">Low</option>
+            </select>
+
+            <small th:errors="*{priority}" class="text-danger invalid-feedback">Priority error message</small>
+        </div>
+
+        <div class="button-holder d-flex justify-content-center">
+            <button type="submit" class="btn btn-warning  mb-3" value="Register">Add task</button>
+        </div>
+
+    </form>
+</main>
+
+<footer th:replace="fragments/commons::footer"></footer>
+
+</body>
+
+</html>

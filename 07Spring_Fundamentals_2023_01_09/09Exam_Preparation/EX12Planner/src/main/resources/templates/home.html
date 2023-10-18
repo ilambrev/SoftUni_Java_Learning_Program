@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/commons::head">
+    <title>Planner App</title>
+</head>
+
+<body>
+
+<header th:replace="fragments/commons::nav"></header>
+
+<main>
+    <div class="container-fluid bg-blur rounded mt-1 mb-4 d-flex justify-content-center" id="big-div">
+
+        <div class="col-5">
+            <h3 class=" bg-gray text-dark  mb-0 mt-2">Assigned to me</h3>
+            <h6 class=" bg-gray text-dark  mb-0 mt-0">Username: <span th:text="${@currentUser.getUsername()}">{loggedUsername}</span></h6>
+            <div class="bg-dark rounded m-auto" style="height: 67vh; overflow: auto">
+                <ul th:each="task: ${assignedTasks}" class="list-group list-group-horizontal text-dark">
+                    <li class="list-group-item bg-warning">
+                        <table>
+                            <tr>
+                                <td scope="row" style="width: 5%"><img class="mr-2 " src="/img/pin.png" alt="Pin" width="35px" height="35px"></td>
+                                <td th:text="${#strings.capitalize(#strings.toLowerCase(task.priority))}" style="width: 15%">{priority}</td>
+                                <td th:text="${#temporals.format(task.dueDate, 'yyyy-MM-dd')}" style="width: 40%">{dueDate}</td>
+                                <td>
+                                    <form th:method="POST" th:action="@{/tasks/delete/{id}(id=${task.id})}">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-link">
+                                            <img src="/img/done-remove-button.png" height="35px" alt="Remove button">
+                                        </button>
+                                    </form>
+<!--                                    <a href="/"><img src="/img/done-remove-button.png" height="35px"></a></td>-->
+                                <td>
+                                <form th:method="POST" th:action="@{/tasks/assign/{id}(id=${task.id})}">
+                                    <input type="hidden" name="_method" value="PATCH">
+                                    <button type="submit" class="btn btn-link">
+                                        <img src="/img/return.png" height="35px" alt="Return Button">
+                                    </button>
+                                </form>
+<!--                                <a href="/"><img src="/img/return.png" height="35px"></a></td>-->
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="list-group-item list-group-item-warning text-dark">
+                        <a th:text="*{task.description}">{description}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <h3 class="mySticky bg-gray text-dark  mb-0 mt-2">All Available Tasks</h3>
+            <h6 class="mySticky bg-gray text-dark  mb-0 mt-0"><span th:text="${unassignedTasks.size()}">{totalUnassignedTasks}</span> Tasks</h6>
+            <div class="bg-dark rounded m-auto" style="height: 67vh; overflow: auto">
+                    <ul th:each="task: ${unassignedTasks}" class="list-group list-group-horizontal text-dark">
+                        <li class="list-group-item bg-warning">
+                            <table>
+                                <tr>
+                                    <td style="width: 5%"><img class="mr-2 " src="/img/pin.png" alt="Pin" width="35px" height="35px"></td>
+                                    <td style="width: 15%"><a th:text="${#strings.capitalize(#strings.toLowerCase(task.priority))}">{priority}</a></td>
+                                    <td><a th:text="${#temporals.format(task.dueDate, 'yyyy-MM-dd')}">Due Date: {dueDate}</a></td>
+                                    <td>
+                                        <form th:method="POST" th:action="@{/tasks/assign/{id}(id=${task.id})}">
+                                            <input type="hidden" name="_method" value="PATCH">
+                                            <button type="submit" class="btn btn-link ml-3">
+                                                <img src="/img/assign-to-me-button.png" height="35px" alt="Assign Button">
+                                            </button>
+
+                                        </form>
+<!--                                        <a class="ml-3" href="/"><img src="/img/assign-to-me-button.png" height="35px"></a>-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="list-group-item list-group-item-warning text-dark">
+                            <a th:text="*{task.description}">{description}</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="fragments/commons::footer"></footer>
+
+</body>
+
+</html>
