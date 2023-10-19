@@ -76,6 +76,6 @@ footer {
 
 /*Style for Logout Button in form - to implement POST method*/
 .btn-logout {
-    text-decoration: none;
+    text-decoration: none!important;
     padding-top: 4px;
 }
