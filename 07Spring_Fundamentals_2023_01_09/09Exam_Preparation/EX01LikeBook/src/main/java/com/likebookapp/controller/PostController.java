@@ -44,6 +44,10 @@ public class PostController {
                           BindingResult bindingResult,
                           RedirectAttributes redirectAttributes) {
 
+        if (!currentUser.isLogged()) {
+            return "redirect:/";
+        }
+
         if (bindingResult.hasErrors()) {
             redirectAttributes.addFlashAttribute("postCreateDTO", postCreateDTO);
             redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.postCreateDTO", bindingResult);
@@ -59,6 +63,10 @@ public class PostController {
     @PatchMapping("/like/{id}")
     public String likePost(@PathVariable("id") Long id) {
 
+        if (!currentUser.isLogged()) {
+            return "redirect:/";
+        }
+
         this.postService.likePost(id);
 
 
@@ -67,6 +75,10 @@ public class PostController {
 
     @DeleteMapping("/delete/{id}")
     public String deletePost(@PathVariable("id") Long id) {
+
+        if (!currentUser.isLogged()) {
+            return "redirect:/";
+        }
 
         this.postService.deletePost(id);
 
