@@ -102,11 +102,9 @@ public class AuthController {
     @PostMapping("/logout")
     public String logout() {
 
-        if (!currentUser.isLogged()) {
-            return "redirect:/";
+        if (currentUser.isLogged()) {
+            this.userService.logoutUser();
         }
-
-        this.userService.logoutUser();
 
         return "redirect:/";
     }
