@@ -58,7 +58,7 @@ public class UserServiceImpl implements UserService {
                 .setUsername(user.getUsername())
                 .setLogged(true);
 
-        return false;
+        return true;
     }
 
     @Override
