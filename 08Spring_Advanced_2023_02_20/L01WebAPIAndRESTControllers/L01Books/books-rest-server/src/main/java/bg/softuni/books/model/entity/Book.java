@@ -16,7 +16,7 @@ public class Book {
     @Column(name = "isbn", nullable = false)
     private String isbn;
 
-    @ManyToOne(targetEntity = Author.class, cascade = CascadeType.PERSIST)
+    @ManyToOne(targetEntity = Author.class)
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private Author author;
 

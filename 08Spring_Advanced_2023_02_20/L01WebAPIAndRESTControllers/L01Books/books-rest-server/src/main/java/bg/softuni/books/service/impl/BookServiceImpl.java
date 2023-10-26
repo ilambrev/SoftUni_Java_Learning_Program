@@ -6,6 +6,7 @@ import bg.softuni.books.model.entity.Book;
 import bg.softuni.books.repository.AuthorRepository;
 import bg.softuni.books.repository.BookRepository;
 import bg.softuni.books.service.BookService;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,7 +46,9 @@ public class BookServiceImpl implements BookService {
 
         Book book = new Book().setTitle(bookDTO.getTitle())
                 .setIsbn(bookDTO.getIsbn())
-                .setAuthor(authorOptional.orElse(new Author().setName(bookDTO.getAuthor())));
+                .setAuthor(authorOptional.orElseGet(() -> this.authorRepository.save(new Author().setName(bookDTO.getAuthor()))));
+
+        this.bookRepository.flush();
 
         return this.bookRepository.save(book).getId();
     }
