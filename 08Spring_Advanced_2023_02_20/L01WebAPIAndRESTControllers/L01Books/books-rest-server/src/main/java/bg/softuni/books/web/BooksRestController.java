@@ -37,23 +37,30 @@ public class BooksRestController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<BookDTO> deleteBookById(@PathVariable("id") Long bookId) {
+    public ResponseEntity<?> deleteBookById(@PathVariable("id") Long bookId) {
 
         this.bookService.deleteBookById(bookId);
 
         return ResponseEntity.noContent().build();
-
     }
 
     @PostMapping
-    public ResponseEntity<BookDTO> createBook(@RequestBody BookDTO bookDTO,
+    public ResponseEntity<?> createBook(@RequestBody BookDTO bookDTO,
                                               UriComponentsBuilder uriComponentsBuilder) {
 
         Long bookId = this.bookService.createBook(bookDTO);
 
-        return ResponseEntity.created(uriComponentsBuilder.path("/api/books/{id}") .build(bookId))
+        return ResponseEntity.created(uriComponentsBuilder.path("/api/books/{id}").build(bookId))
                 .build();
+    }
 
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> updateBook(@RequestBody BookDTO bookDTO,
+                                              @PathVariable("id") Long bookId,
+                                              UriComponentsBuilder uriComponentsBuilder) {
+
+        return this.bookService.updateBookInfo(bookDTO.setId(bookId)) ?
+                ResponseEntity.ok("Book successfully updated!") : ResponseEntity.notFound().build();
     }
 
 }
