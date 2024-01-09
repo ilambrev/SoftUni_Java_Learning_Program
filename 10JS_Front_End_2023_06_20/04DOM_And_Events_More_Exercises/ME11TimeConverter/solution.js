@@ -1,8 +1,6 @@
 function attachEventsListeners() {
     let convertButtons = Array.from(document.querySelectorAll('input[value="Convert"]'));
 
-    console.log(convertButtons);
-
     convertButtons.forEach(b => {
         b.addEventListener('click', (e) => {
             let unitsNumber = Number(e.currentTarget.parentElement.querySelector('input[type="text"]').value);
