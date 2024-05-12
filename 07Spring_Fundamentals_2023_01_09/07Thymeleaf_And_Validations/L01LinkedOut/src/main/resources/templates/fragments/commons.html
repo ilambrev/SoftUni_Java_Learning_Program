@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:fragment="head">
+        <meta charset="UTF-8">
+        <title>LinkedOut</title>
+        <link rel="stylesheet" th:href="@{/css/reset-css.css}"/>
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    </head>
+
+    <body>
+
+        <header th:fragment="header">
+            <nav class="navbar navbar-expand-lg navbar-toggler bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link text-white" th:href="@{/companies/add}">Add Company</a>
+                        <a class="nav-item nav-link text-white" th:href="@{/employees/add}">Add Employee</a>
+                        <a class="nav-item nav-link text-white" th:href="@{/companies/all}">All Companies</a>
+                        <a class="nav-item nav-link text-white" th:href="@{/employees/all}">All Employees</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <footer th:fragment="footer">
+            <div id="footer">
+                <div class="container-fluid bg-transparent rounded">
+                    <div class="text-white p-2 text-center">&copy; Spring Team 2023. All rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

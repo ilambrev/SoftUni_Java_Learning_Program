@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{fragments/commons :: head}">
+        <title>LinkedOut</title>
+    </head>
+
+    <body>
+
+        <header th:replace="~{fragments/commons :: header}"></header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="jumbotron text-center rounded col-md-12 align-self-center">
+                        <div class="justify-content-center">
+                            <h1>Company Details</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 bg-dark"><img src="/pic/company.png" height="350px" alt="Company image"></div>
+                            <div class="col-md-6 bg-dark" th:object="${companyDetails}">
+                                <h2>Company</h2>
+                                <h4>Name: <th:block th:text="*{name}">{name}</th:block></h4>
+                                <h4>Town: <th:block th:text="*{town}">{town}</th:block></h4>
+                                <h4>Description: <th:block th:text="*{description}">{description}</th:block></h4>
+                                <h4>Budget: <th:block th:text="*{budget}">{budget}</th:block></h4>
+                                <div class="align-bottom">
+                                    <form th:action="@{/companies/delete/{id} (id=${id})}" th:method="POST">
+                                        <input type="hidden" name="_method" value="delete" />
+                                        <button type="submit" class="btn btn-danger align-bottom">Delete company</button>
+<!--                                        <a class="btn btn-danger align-bottom" href="/">Delete company</a>-->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </main>
+
+        <footer th:replace="~{fragments/commons :: footer}"></footer>
+
+    </body>
+
+</html>

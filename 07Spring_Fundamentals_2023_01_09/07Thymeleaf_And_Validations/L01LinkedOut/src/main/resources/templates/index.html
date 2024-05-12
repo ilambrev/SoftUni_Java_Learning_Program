@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{fragments/commons :: head}">
+        <title>LinkedOut</title>
+    </head>
+
+    <body>
+
+        <header th:replace="~{fragments/commons :: header}"></header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="jumbotron text-center rounded col-md-8 align-self-center">
+                        <div class="justify-content-center">
+                            <h1>Welcome to LinkedOut Application</h1>
+                        </div>
+                        <div>Last update of Database:
+                            <th:block th:text="${#dates.createNow()}">{Current date and time}</th:block>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </main>
+
+        <footer th:replace="~{fragments/commons :: footer}"></footer>
+
+    </body>
+
+</html>

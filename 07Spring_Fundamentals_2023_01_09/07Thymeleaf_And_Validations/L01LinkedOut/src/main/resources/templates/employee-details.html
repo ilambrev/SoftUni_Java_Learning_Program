@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{fragments/commons :: head}">
+        <title>LinkedOut</title>
+    </head>
+
+    <body>
+
+        <header th:replace="~{fragments/commons :: header}"></header>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <main class="jumbotron text-center rounded col-md-12 align-self-center">
+                        <div class="justify-content-center">
+                            <h1>Employee Details</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 bg-dark" th:object="${employeeDetails}">
+                                <h2>Employee</h2>
+                                <h4>First Name: <th:block th:text="*{firstName}">{firstName}</th:block></h4>
+                                <h4>Last Name: <th:block th:text="*{lastName}">{lastName}</th:block></h4>
+                                <h4>Education Level: <th:block th:text="*{#strings.capitalize(#strings.toLowerCase(educationLevel.name()))}">{educationLevel}</th:block></h4>
+                                <h4>Job title: <th:block th:text="*{jobTitle}">{jobTitle}</th:block></h4>
+                                <h4>Birthdate: <th:block th:text="*{#temporals.format(birthDate, 'dd-MMM-yyyy')}">{birthDate}</th:block></h4>
+                                <h4>Salary: <th:block th:text="*{#numbers.formatDecimal(salary,1,0) + '$'}">{salary in format 10$}</th:block></h4>
+                                <h4>Company: <th:block th:text="*{companyName}">{company name}</th:block></h4>
+                                <div class="align-bottom">
+                                    <form th:action="@{/employees/delete/{id} (id=${id})}" th:method="POST">
+                                        <input type="hidden" name="_method" value="delete" />
+                                        <button type="submit" class="btn btn-danger align-bottom">Delete employee</button>
+                                    </form>
+<!--                                    <a class="btn btn-danger align-bottom" href="/">Delete employee</a>-->
+                                </div>
+                            </div>
+                            <div class="col-md-6 bg-dark"><img src="/pic/employee.png" height="350px" alt="Employee image"></div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </main>
+
+        <footer th:replace="~{fragments/commons :: footer}"></footer>
+
+    </body>
+
+</html>

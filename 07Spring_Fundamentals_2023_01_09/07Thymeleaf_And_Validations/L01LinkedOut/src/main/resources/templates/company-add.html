@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{fragments/commons :: head}">
+        <title>LinkedOut</title>
+    </head>
+
+    <body>
+
+        <header th:replace="~{fragments/commons :: header}"></header>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <main class="jumbotron text-center rounded col-md-8 align-self-center">
+                <div class="justify-content-center">
+                    <h1>Add Company</h1>
+                </div>
+                <form class="m-md-auto w-50 text-center"
+                      th:action="@{/companies/add}"
+                      th:method="POST"
+                      th:object="${companyCreateDTO}">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control text-center" id="name" aria-describedby="name"
+                               th:field="*{name}"
+                               th:errorclass="is-invalid"/>
+                        <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="town">Town</label>
+                        <input type="text" class="form-control text-center" id="town" aria-describedby="town"
+                               th:field="*{town}"
+                               th:errorclass="is-invalid"/>
+                        <small th:if="${#fields.hasErrors('town')}" th:errors="*{town}"class="invalid-feedback errors alert alert-danger">Error message</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control text-center"
+                        id="description" aria-describedby="description"
+                               th:field="*{description}"
+                               th:errorclass="is-invalid"/>
+                        <small th:if="${#fields.hasErrors('description')}" th:errors="*{description}"class="invalid-feedback errors alert alert-danger">Error message</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget</label>
+<!--                        <input type="number" min="0" class="form-control text-center"-->
+                        <input type="number" class="form-control text-center"
+                        id="budget" aria-describedby="budget"
+                               th:field="*{budget}"
+                               th:errorclass="is-invalid"/>
+                        <small th:if="${#fields.hasErrors('budget')}" th:errors="*{budget}" class="invalid-feedback errors alert alert-danger">Budget</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary">Add Company</button>
+                </form>
+            </main>
+        </div>
+
+        <footer th:replace="~{fragments/commons :: footer}"></footer>
+
+    </body>
+
+</html>

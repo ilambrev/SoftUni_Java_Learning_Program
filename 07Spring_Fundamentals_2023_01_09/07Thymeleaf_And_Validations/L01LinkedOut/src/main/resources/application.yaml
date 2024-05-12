@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/linked_out_db?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    open-in-view: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  sql:
+    init:
+      mode: never
+#            mode: always
+logging:
+  level:
+    #      org.hibernate.orm.jdbc.bind: trace
+    org.hibernate.type: trace
+    #      org.hibernate.stat: debug
+    org.hibernate:sql: debug
+#      org.hibernate.type.descriptor.sql.BasicBinder: trace

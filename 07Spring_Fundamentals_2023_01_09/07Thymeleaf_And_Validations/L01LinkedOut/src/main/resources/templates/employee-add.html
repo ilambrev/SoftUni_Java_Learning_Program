@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{fragments/commons :: head}">
+        <title>LinkedOut</title>
+    </head>
+
+    <body>
+
+        <header th:replace="~{fragments/commons :: header}"></header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <main class="jumbotron text-center rounded col-md-12 align-self-center">
+                    <div class="justify-content-center">
+                        <h1>Add Employee</h1>
+                    </div>
+                    <form class="m-md-auto w-50 text-center"
+                          th:action="@{/employees/add}"
+                          th:method="POST" th:object="${employeeCreateDTO}">
+
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control text-center" id="firstName" aria-describedby="firstName" name="firstName"
+                                   th:field="*{firstName}"
+                                   th:errorclass="is-invalid"/>
+                            <small th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control text-center" id="lastName" aria-describedby="lastName" name="lastName"
+                                   th:field="*{lastName}"
+                                   th:errorclass="is-invalid"/>
+                            <small th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                        </div>
+                        <fieldset class="form-group">
+                            <legend>Choose Education Level</legend>
+                            <div class="form-check mb-2" th:each="level : ${educationLevels}">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="educationLevel"
+                                           th:field="${employeeCreateDTO.educationLevel}"
+                                           th:value="${level}"/>
+                                    <span th:text="${#strings.capitalize(#strings.toLowerCase(level))}">Level</span>
+                                </label>
+                            </div>
+                            <small th:if="${#fields.hasErrors('educationLevel')}" th:errors="*{educationLevel}" class="errors alert alert-danger" style="margin-top: 20px">Error message</small>
+                        </fieldset>
+
+                        <div class="form-group">
+                            <label for="company"><h5>All available companies</h5></label>
+                            <select class="form-control text-center" id="company" name="company"
+                                    th:field="*{companyName}"
+                                    th:errorclass="is-invalid">
+                                <option value="">- Select company -</option>
+                                <option th:each="company : ${companiesNames}"
+                                        th:value="${company}"
+                                        th:text="${company}">Company name
+                                </option>
+                            </select>
+                            <small th:if="${#fields.hasErrors('companyName')}" th:errors="*{companyName}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="jobTitle">Job Title</label>
+                            <input type="text" class="form-control text-center" id="jobTitle" aria-describedby="jobTitle" name="jobTitle"
+                                   th:field="*{jobTitle}"
+                                   th:errorclass="is-invalid"/>
+                            <small th:if="${#fields.hasErrors('jobTitle')}" th:errors="*{jobTitle}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthDate">Birth Date</label>
+                            <input type="date" class="form-control text-center" id="birthDate" aria-describedby="birthDate"
+                                   th:name="birthDate"
+                                   th:value="*{birthDate}"
+                                   th:errorclass="is-invalid"/>
+                            <small th:if="${#fields.hasErrors('birthDate')}" th:errors="*{birthDate}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary">Salary</label>
+                            <input type="number" class="form-control text-center" id="salary" aria-describedby="salary" name="salary"
+                                   th:field="*{salary}"
+                                   th:errorclass="is-invalid"/>
+                            <small th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}" class="invalid-feedback errors alert alert-danger">Error message</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">Add Employee</button>
+                    </form>
+                </main>
+            </div>
+        </div>
+
+        <footer th:replace="~{fragments/commons :: footer}"></footer>
+
+    </body>
+
+</html>
