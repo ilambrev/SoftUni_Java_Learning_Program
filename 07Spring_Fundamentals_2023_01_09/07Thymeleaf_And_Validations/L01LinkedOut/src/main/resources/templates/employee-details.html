@@ -29,8 +29,7 @@
                                 <h4>Salary: <th:block th:text="*{#numbers.formatDecimal(salary,1,0) + '$'}">{salary in format 10$}</th:block></h4>
                                 <h4>Company: <th:block th:text="*{companyName}">{company name}</th:block></h4>
                                 <div class="align-bottom">
-                                    <form th:action="@{/employees/delete/{id} (id=${id})}" th:method="POST">
-                                        <input type="hidden" name="_method" value="delete" />
+                                    <form th:action="@{/employees/delete/{id} (id=${id})}" th:method="DELETE">
                                         <button type="submit" class="btn btn-danger align-bottom">Delete employee</button>
                                     </form>
 <!--                                    <a class="btn btn-danger align-bottom" href="/">Delete employee</a>-->
