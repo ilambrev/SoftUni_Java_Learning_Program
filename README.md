@@ -1,4 +1,4 @@
-# Java Web Developer
-**_SoftUni Software Engineering Program_**
+# Software Engineer With Java
+**_SoftUni Professional Program_**
 
-In this repository I will store all problem solutions during my training at SoftUni.
+This repository contains my solutions to the tasks that are part of the Software Engineer With Java professional program.
